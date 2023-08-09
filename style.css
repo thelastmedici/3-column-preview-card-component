@@ -4,6 +4,97 @@ html{
     margin: 0;
     padding: 0;
 }
+body{
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.container{
+max-height: 900px;
+margin: 0 auto;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+    overflow: hidden;
+
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+    justify-content: center;
+    padding: 40px;
+}
+.suvs{
+    background-color:  hsl(184, 100%, 22%);
+    
+    padding: 40px;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 40px;
+    
+}
+.box > h2{
+    font-weight: 700;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform:uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+}
+ .box p{
+    font-weight: normal;
+    line-height: 1.5;
+    font-family:'Lexend Deca' ;
+    color: hsla(0, 0%, 100%, 0.75);
+ }
+
+.box a{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top:60px;
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 95%);
+    transition: all.8s-ease-in-out;
+}
+.suvs a{
+    color: hsl(184, 100%, 22%);
+}
+.sedans a{
+    color: hsl(31, 77%, 52%);
+}
+.luxury a{
+    color: hsl(179, 100%, 13%);
+}
+.box a:hover{
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+ @media only screen and  (max-width: 760px){
+    .wrapper{
+        grid-template-columns:1fr;
+    }
+} 
+
+@media only screen and  (max-width: 425px){
+    .wrapper{
+        margin:1rem .5rem;
+    }
+} 
